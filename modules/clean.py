@@ -16,10 +16,4 @@ drop_list = [
 ]
 
 
-def drop_cols(cols: list, df_input: DataFrame) -> DataFrame:
-    for col in cols:
-        df_input = df_input.drop(columns=col)
-    return df_input
-
-
-df = drop_cols(drop_list, df)
+df = df.drop(columns=drop_list)
