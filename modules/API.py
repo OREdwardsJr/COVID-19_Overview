@@ -4,4 +4,4 @@ from imports import requests
 url = "https://data.cdc.gov/resource/n8mc-b4w4.json"
 r = requests.get(url)
 content = r.json()
-print(len(content))
+
