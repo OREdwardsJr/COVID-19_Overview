@@ -4,6 +4,6 @@ url = "https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d688
 r = requests.get(url)
 states = r.json()
 
-'''Remove expanded name and replace with 0'''
-for key, val in states.items():
+"""Remove expanded name and replace with 0"""
+for key in states:
     states[key] = 0
